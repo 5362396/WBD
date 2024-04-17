@@ -1,0 +1,8 @@
+conda update -n base conda
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+conda search r-base
+conda install -c conda-forge r-base=4.1.3
+conda create -n <nazwa-srodowiska> r-base=4.1.3 r-essentials
+
+https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community
