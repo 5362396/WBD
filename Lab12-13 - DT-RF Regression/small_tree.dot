@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="PicoplanktonBiomassC <= 0.335\nsquared_error = 0.334\nsamples = 71\nvalue = 0.737"] ;
+1 [label="squared_error = 0.098\nsamples = 17\nvalue = 0.267"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="NO3N <= 0.042\nsquared_error = 0.315\nsamples = 54\nvalue = 0.892"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="PSU <= 3.55\nsquared_error = 0.151\nsamples = 38\nvalue = 0.75"] ;
+2 -> 3 ;
+4 [label="squared_error = 0.15\nsamples = 19\nvalue = 0.542"] ;
+3 -> 4 ;
+5 [label="squared_error = 0.082\nsamples = 19\nvalue = 0.931"] ;
+3 -> 5 ;
+6 [label="squared_error = 0.545\nsamples = 16\nvalue = 1.235"] ;
+2 -> 6 ;
+}
